@@ -9,9 +9,11 @@ Pod::Spec.new do |s|
       :git => 'https://github.com/hahajzy64/UmengMessage_NoIDFA_1.30.git',
       :tag => '1.30'
   }
-  s.license = 'MIT'
-  s.source_files  = "*.h"
-  s.resources = "libUMessage_Sdk_1.3.0.a"
+
+  s.source_files  = "Classes", "UMengMessage-NO-IDFA/*.h"
+  s.public_header_files = "UMengMessage-NO-IDFA/*.h"
+  s.vendored_library = "UMengMessage-NO-IDFA/*.a"
+  
   s.requires_arc = true
 
 end
